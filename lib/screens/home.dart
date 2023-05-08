@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:maplibre_gl/mapbox_gl.dart';
 
 import 'package:almanach/components/bottom_nav.dart';
-import 'package:almanach/components/home_screen/main_screen.dart';
+import 'package:almanach/components/home_screen/bottom_sheet.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -27,14 +27,6 @@ class HomeScreen extends StatelessWidget {
                   myLocationTrackingMode: MyLocationTrackingMode.None,
                 ),
 
-                // TODO: Tentative ratée pour une carte
-                // à remplacer par une bottom sheet permanente
-                // https://api.flutter.dev/flutter/material/BottomSheet-class.html
-                //Container(
-                //  alignment: Alignment.topCenter,
-                //  child: const MainView(),
-                //),
-
                 SafeArea(
                   child: Container(
                     alignment: Alignment.topCenter,
@@ -55,6 +47,8 @@ class HomeScreen extends StatelessWidget {
               ]
       ),
       bottomNavigationBar: const BottomNav(),
+      // TODO : Masque totalement le Stack, à débuguer
+      //bottomSheet: const HomeSheet(),
     );
   }
 }
