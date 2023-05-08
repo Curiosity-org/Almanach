@@ -52,14 +52,9 @@ class HomeScreen extends StatelessWidget {
                     ),
                   ),
                 ),
-                SafeArea(
-                  child: Container(
-                    alignment: Alignment.bottomCenter,
-                    child: const BottomNav(),
-                  ),
-                )
               ]
       ),
+      bottomNavigationBar: const BottomNav(),
     );
   }
 }

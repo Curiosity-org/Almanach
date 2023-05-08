@@ -5,133 +5,25 @@ class BottomNav extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      height: 70,
-      decoration: const BoxDecoration(
-        color: Color(
-          0xffffffff,
-        ),
-        borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(
-            40,
+    return NavigationBar(
+        destinations: [
+          NavigationDestination(
+            icon: Image.asset('assets/home.png', width: 30, height: 30),
+            label: 'Accueil',
           ),
-          topRight: Radius.circular(
-            40,
+          NavigationDestination(
+            icon: Image.asset('assets/bus-stop.png', width: 30, height: 30),
+            label: 'Arrêts',
           ),
-          bottomLeft: Radius.circular(
-            0,
+          NavigationDestination(
+            icon: Image.asset('assets/heart.png', width: 30, height: 30),
+            label: 'Favoris',
           ),
-          bottomRight: Radius.circular(
-            0,
+          NavigationDestination(
+            icon: Image.asset('assets/gender.png', width: 30, height: 30),
+            label: 'Profil',
           ),
-        ),
-        boxShadow: [],
-      ),
-      child:
-        Row(
-          children: [
-            Expanded(
-              child: Column(
-                children: const [
-                  IconButton(
-                    onPressed: null,
-                    icon: Image(
-                      image: AssetImage(
-                        'assets/home.png',
-                      ),
-                    ),
-                  ),
-                  Text(
-                    'Accueil',
-                    style: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 10,
-                      color: Color(
-                        0xff000000,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-
-            Expanded(
-              child: Column(
-                children: const [
-                  IconButton(
-                    onPressed: null,
-                    icon: Image(
-                      image: AssetImage(
-                        'assets/bus-stop.png',
-                      ),
-                    ),
-                  ),
-                  Text(
-                    'Explorer',
-                    style: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 10,
-                      color: Color(
-                        0xff000000,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-
-            Expanded(
-              child: Column(
-                children: const [
-                  IconButton(
-                    onPressed: null,
-                    icon: Image(
-                      image: AssetImage(
-                        'assets/heart.png',
-                      ),
-                    ),
-                  ),
-                  Text(
-                    'Favoris',
-                    style: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 10,
-                      color: Color(
-                        0xff000000,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-
-            Expanded(
-              child: Column(
-                children: const [
-                  IconButton(
-                    onPressed: null,
-                    icon: Image(
-                      image: AssetImage(
-                        'assets/gender.png',
-                      ),
-                    ),
-                  ),
-                  Text(
-                    'Profil',
-                    style: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 10,
-                      color: Color(
-                        0xff000000,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        )
+        ],
     );
   }
 }
