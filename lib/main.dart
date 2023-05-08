@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:almanach/screens/home.dart';
+import 'package:almanach/pages/Home/Home.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -9,10 +9,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: 'HomeScreen',
+      initialRoute: 'HomePage',
       routes: {
-        'HomeScreen': (context) {
-          return const HomeScreen();
+        'HomePage': (context) {
+          return const HomePage();
         }
       },
     );

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:maplibre_gl/mapbox_gl.dart';
 
-import 'package:almanach/components/bottom_nav.dart';
-import 'package:almanach/components/home_screen/bottom_sheet.dart';
+import 'package:almanach/ui/components/navigation.dart';
+import 'package:almanach/ui/components/bottom_sheet.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
 
-  static const String routeName = 'HomeScreen';
+  static const String routeName = 'HomePage';
 
   @override
   Widget build(BuildContext context) {
