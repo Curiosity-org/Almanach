@@ -24,6 +24,7 @@ class _HomePage extends State<HomePage> {
             myLocationEnabled: true,
             myLocationRenderMode: MyLocationRenderMode.NORMAL,
             myLocationTrackingMode: MyLocationTrackingMode.None,
+            compassEnabled: false,
           ),
 
           SafeArea(
