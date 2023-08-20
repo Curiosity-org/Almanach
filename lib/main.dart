@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:almanach/pages/Home/Home.dart';
+import 'package:almanach/pages/Main.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       initialRoute: 'HomePage',
       routes: {
         'HomePage': (context) {
-          return const HomePage();
+          return const MainPage();
         }
       },
     );
